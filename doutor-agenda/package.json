@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.43.1",
+    "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "pg": "^8.15.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -32,6 +37,7 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4",
     "tsx": "^4.19.4",
+    "tw-animate-css": "^1.3.0",
     "typescript": "^5"
   }
 }
