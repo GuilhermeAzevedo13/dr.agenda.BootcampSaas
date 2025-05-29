@@ -1,39 +1,20 @@
 "use client"; // utilizar mais de uma div nas hooks feitos no lado do usuario e nao do server
 
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import LoginForm from "./components/login-form";
 import SignUpForm from "./components/sign-up-form";
 
 const AuthenticationPage = () => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      <Tabs defaultValue="account" className="w-[400px]">
+      <Tabs defaultValue="login" className="w-[400px]">
         <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="login">Account</TabsTrigger>
-          <TabsTrigger value="register">Password</TabsTrigger>
+          <TabsTrigger value="login">Faça Login</TabsTrigger>
+          <TabsTrigger value="register">Criar Conta</TabsTrigger>
         </TabsList>
         <TabsContent value="login">
-          <Card>
-            <CardHeader>
-              <CardTitle>Login</CardTitle>
-              <CardDescription>
-                Make changes to your account here. Click save when youre done.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2"></CardContent>
-            <CardFooter>
-              <Button>Login</Button>
-            </CardFooter>
-          </Card>
+          <LoginForm />
         </TabsContent>
         <TabsContent value="register">
           <SignUpForm />
