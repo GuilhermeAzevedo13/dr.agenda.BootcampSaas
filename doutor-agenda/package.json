@@ -10,7 +10,9 @@
     "migrate": "drizzle-kit generate:ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
     "@neondatabase/serverless": "^1.0.0",
+    "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.12",
     "class-variance-authority": "^0.7.1",
@@ -22,7 +24,9 @@
     "pg": "^8.15.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.3.0"
+    "react-hook-form": "^7.56.4",
+    "tailwind-merge": "^3.3.0",
+    "zod": "^3.25.36"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
