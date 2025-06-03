@@ -18,7 +18,7 @@ const AuthenticationPage = async () => {
     redirect("/dashboard");
   }
   return (
-    <div className="flex flex-col h-screen w-screen items-center justify-center">
+    <div className="flex flex-col md:flex-row h-screen w-screen items-center justify-center">
       <div className="p-10">
         <div className="flex items-center space-x-4 mb-4">
           <Image src="/logomarca.svg" alt="Dr.Agenda" width={136} height={28} />
