@@ -129,7 +129,7 @@ export function AppSidebar() {
               <DropdownMenuContent>
                 <DropdownMenuItem onClick={handleSignOut}>
                   <LogOut />
-                  Sair
+                  <span className="ml-2">Sair</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
